@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% include "partials/meta.njk" %}
+    </head>
+    <body>
+        <nav>
+            {% include "partials/nav.njk" %}
+        </nav>
+        <main>
+            <article class="h-entry" {% if date and structuredData.type %} itemscope itemtype="https://schema.org/{{ structuredData.type }}" {% endif %}>
+                {% block main %}
+                    {% if title and not notitle %}
+                        <header>
+                            <div class="bg bg-1"></div>
+                            <div class="bg bg-2"></div>
+                            <div class="bg bg-3"></div>
+                            <div class="grain"></div>
+                            <div class="main-head">
+                                <div>
+                                    {% block title %}
+                                        <h1 class="p-name" itemprop="headline">{{ title }}</h1>
+                                    {% endblock %}
+                                    {% if description %}
+                                        <p class="p-summary">{{ description }}</p>
+                                    {% endif %}
+                                </div>
+                                <img src="/logo.png"/>
+                            </div>
+                        </header>
+                    {% endif %}
+                    <div class="e-content">
+                        {{ content | safe }}
+                    </div>
+                {% endblock %}
+            </article>
+        </main>
+        <footer>
+            {% include "partials/foot.njk" %}
+        </footer>
+    </body>
+</html></body></html></body></html>

@@ -1,0 +1,21 @@
+<meta charset="utf-8"/>
+{% for name,content in metaTags %}
+    <meta name="{{ name }}" content="{{ content | interpolate }}"/>
+{% endfor %}
+{% if description %}
+    <meta name="description" content="{{ description }}"/>
+{% endif %}
+{% if noindex %}
+    <meta name="robots" content="noindex"/>
+{% endif %}
+<title>{{ title }}</title>
+<link rel="stylesheet" href="/main.css"/>
+{% if headInject %}
+    {{ headInject | safe }}
+{% endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link
+    href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Odibee+Sans&display=swap"
+    rel="stylesheet"/>
+<script src="/index.js" defer></script>
