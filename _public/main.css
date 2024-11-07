@@ -5,6 +5,10 @@ body {
   font-size: 20px;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -20,10 +24,19 @@ html {
 }
 
 nav,
-footer,
 header,
-.e-content {
+.e-content,
+footer > div {
   padding: 0rem 5rem;
+}
+
+a {
+  color: #46466a;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #46466a;
 }
 
 .e-content {
@@ -34,6 +47,7 @@ header,
   h5,
   h6 {
     color: #46466a;
+    font-family: "Odibee Sans", sans-serif;
   }
 
   h2 {
@@ -43,7 +57,7 @@ header,
 
 header {
   width: 100%;
-  height: 500px;
+  height: 450px;
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -67,6 +81,7 @@ h1 {
   font-family: "Odibee Sans", sans-serif;
   margin-block: 0;
   animation: fadeUp 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+  view-transition-name: title;
 }
 
 .main-head {
@@ -74,6 +89,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  flex-wrap: wrap-reverse;
 
   img {
     height: 150px;
@@ -85,11 +101,14 @@ nav {
   position: fixed;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+
   align-items: center;
   justify-content: space-between;
   padding: 1rem 5rem;
   color: white;
   z-index: 99;
+  view-transition-name: nav;
 
   > div {
     display: flex;
@@ -109,8 +128,12 @@ nav {
   }
 
   a:hover {
-    color: rgb(38, 61, 70);
+    color: rgb(38, 61, 70) !important;
     background-color: white;
+  }
+
+  a:visited {
+    color: white;
   }
 
   &.scrolled {
@@ -119,6 +142,41 @@ nav {
   }
 
   transition: background-color 0.3s;
+}
+
+footer {
+  margin: 5rem 0;
+  font-size: 28px;
+  font-weight: 500;
+  view-transition-name: footer;
+  > div,
+  img {
+    width: 100%;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > div:last-of-type {
+    align-items: end;
+  }
+
+  img {
+    padding: 0 25%;
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.1));
+
+    &:hover {
+      transform: skew(0, -5deg);
+    }
+
+    transition: transform 0.3s;
+  }
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 @keyframes fadeUp {
@@ -253,11 +311,51 @@ nav {
 @keyframes unwind {
   0% {
     transform: rotate(0deg);
+    filter: blur(50px);
   }
   60% {
     transform: rotate(380deg);
+    filter: blur(0px);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+hr {
+  border: 0;
+  border-top: #c8d4d7 2px dashed;
+  margin: 5rem 5rem;
+}
+
+/* on small screens */
+@media (max-width: 800px) {
+  nav,
+  header,
+  .e-content,
+  footer > div {
+    padding: 0rem 3rem;
+  }
+
+  nav {
+    padding: 1rem 3rem;
+  }
+
+  header {
+    padding: 3rem 3rem;
+  }
+}
+
+.parted {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 4rem;
+  margin-block: 3rem;
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.1));
   }
 }

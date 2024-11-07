@@ -1,0 +1,11 @@
+<div>
+    {% for k,v in links[0] %}
+        <a href="{{ v }}" style="--i: {{ loop.index }}">{{ k }}</a>
+    {% endfor %}
+</div>
+<img src="/media/abby.png"/>
+<div>
+    {% for k,v in links[1] %}
+        <a href="{{ v }}" style="--i: {{ loop.index }}">{{ k }}</a>
+    {% endfor %}
+</div>
