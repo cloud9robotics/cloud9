@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      CMS.registerEditorComponent({
+        id: "parted-image",
+        label: "Image & Text",
+        fields: [
+          {
+            name: "imageSide",
+            label: "Image Side",
+            widget: "select",
+            options: ["left", "right"],
+          },
+          {
+            name: "image",
+            label: "Image",
+            widget: "image",
+          },
+          {
+            name: "contents",
+            label: "Contents",
+            widget: "markdown",
+          },
+        ],
+        pattern:
+          /<div class="parted">\n*?(?:!\[.*?\]\((.*?)\)\n*?<div>([\S\s]*)<\/div>|\n*?<div>([\S\s]*)<\/div>\n*?!\[.*?\]\((.*?)\)\n*?)\n*?<\/div>/m,
+        fromBlock: function (match) {
+          return {
+            image: match[1] || match[4],
+            contents: match[2] || match[3],
+            imageSide: match[1] ? "left" : "right",
+          };
+        },
+        toBlock: function (obj) {
+          console.log(obj);
+          if (obj.imageSide === "left") {
+            return `<div class="parted">
+![](${obj.image})
+<div>
+${obj.contents}
+</div>
+</div>`;
+          } else {
+            return `<div class="parted">
+<div>
+${obj.contents}
+</div>
+![](${obj.image})
+</div>`;
+          }
+        },
+        toPreview: function (obj) {
+          if (obj.imageSide === "left") {
+            return `<div class="parted">
+<img src="${obj.image}"/>
+<div>
+${obj.contents}
+</div>
+</div>`;
+          } else {
+            return `<div class="parted">
+<div>
+${obj.contents}
+</div>
+<img src="${obj.image}"/>
+</div>`;
+          }
+        },
+      });
+    </script>
+  </body>
+</html>

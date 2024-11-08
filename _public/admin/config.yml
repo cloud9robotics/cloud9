@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: boehs/cloud9
+  branch: main
+  site_domain: cloud9robotics.pages.dev
+publish_mode: simple
+media_folder: _public/media
+public_folder: media
+site_url: https://cloud9robotics.pages.dev
+collections:
+  - name: marketing
+    label: Marketing
+    folder: pages
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
