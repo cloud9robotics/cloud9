@@ -10,6 +10,23 @@
     <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
+      CMS.registerPreviewStyle("/main.css");
+      CMS.registerPreviewStyle(
+        `@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Odibee+Sans&display=swap');
+      div:has(>h1) {
+        color: white;
+        background: #475C7A;
+        padding: 6rem 3rem 0.25rem;
+      }
+      .frame-content > div > div:not(:last-child) {
+        color: white;
+        background: #475C7A;
+      }
+      .frame-content > div > div:nth-last-child(2) {
+        padding: 0rem 3rem 1rem;
+      }`,
+        { raw: true }
+      );
       CMS.registerEditorComponent({
         id: "parted-image",
         label: "Image & Text",
