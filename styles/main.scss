@@ -1,3 +1,5 @@
+@use "_bg.scss";
+
 body {
   margin: 0;
   padding: 0;
@@ -188,114 +190,6 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.bg {
-  point-events: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  animation: pulse 4s ease-in-out infinite alternate;
-}
-
-.grain {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
-  height: 300%;
-  width: 300%;
-  position: absolute;
-  opacity: 0.03;
-  animation: animateGrain 8s steps(10) infinite;
-  z-index: 5;
-  top: 0%;
-  pointer-events: none;
-  left: 0%;
-}
-
-@keyframes animateGrain {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(-5%, -10%);
-  }
-  20% {
-    transform: translate(-15%, -20%);
-  }
-  30% {
-    transform: translate(-5%, -10%);
-  }
-  40% {
-    transform: translate(-15%, -20%);
-  }
-
-  50% {
-    transform: translate(-5%, -10%);
-  }
-  60% {
-    transform: translate(-15%, -20%);
-  }
-  70% {
-    transform: translate(-5%, -10%);
-  }
-  80% {
-    transform: translate(-15%, -20%);
-  }
-  90% {
-    transform: translate(-5%, -10%);
-  }
-  100% {
-    transform: translate(-15%, -20%);
-  }
-}
-.bg-1 {
-  background-color: rgb(60, 82, 92);
-  background-image: radial-gradient(
-      at 67% 64%,
-      rgb(51, 83, 137) 0,
-      transparent 49%
-    ),
-    radial-gradient(at 25% 54%, rgb(58, 76, 144) 0, transparent 44%),
-    radial-gradient(at 30% 82%, rgb(68, 86, 105) 0, transparent 43%),
-    radial-gradient(at 95% 92%, rgb(68, 77, 91) 0, transparent 40%),
-    radial-gradient(at 31% 66%, rgb(61, 83, 95) 0, transparent 41%),
-    radial-gradient(at 65% 32%, rgb(64, 81, 107) 0, transparent 54%);
-  z-index: 1;
-  animation-delay: 0s;
-}
-
-.bg-2 {
-  background-color: rgb(60, 82, 92);
-
-  background-image: radial-gradient(
-      at 10% 100%,
-      hsla(213, 21%, 52%, 0.7) 0,
-      transparent 45%
-    ),
-    radial-gradient(at 83% 34%, rgb(65, 108, 103) 0, transparent 50%),
-    radial-gradient(at 94% 75%, rgb(69, 86, 112) 0, transparent 50%),
-    radial-gradient(at 80% 0%, rgb(84, 86, 116) 0, transparent 50%),
-    radial-gradient(at 0% 0%, rgb(48, 96, 108) 0, transparent 50%);
-  animation-delay: 2s;
-  z-index: 2;
-}
-.bg-3 {
-  background-color: rgb(60, 82, 92);
-
-  background-image: radial-gradient(
-      at 16% 4%,
-      rgb(72, 97, 140) 0,
-      transparent 50%
-    ),
-    radial-gradient(at 72% 31%, rgb(58, 92, 121) 0, transparent 44%),
-    radial-gradient(at 86% 11%, rgb(81, 83, 105) 0, transparent 52%),
-    radial-gradient(at 57% 3%, rgb(80, 92, 136) 0, transparent 49%),
-    radial-gradient(at 93% 30%, rgb(58, 81, 133) 0, transparent 57%),
-    radial-gradient(at 89% 79%, rgb(76, 83, 136) 0, transparent 45%);
-  animation-delay: 4s;
-  z-index: 3;
 }
 
 @keyframes pulse {
