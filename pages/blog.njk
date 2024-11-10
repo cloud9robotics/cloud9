@@ -1,0 +1,19 @@
+---
+pagination:
+    data: collections.posts
+    size: 1
+permalink: "/blog/"
+eleventyComputed:
+    title: "Blog"
+---
+
+{%- for item in pagination.items %}
+    <article>
+        <h2>
+            <a href="{{ item.url }}">{{ item.data.title }}</a>
+        </h2>
+        {% if item.data.description %}
+            <p>{{ item.data.description }}</p>
+        {% endif %}
+    </article>
+{% endfor -%}

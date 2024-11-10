@@ -39,7 +39,7 @@ export default function (eleventyConfig) {
     },
     compileOptions: {
       permalink: function (contents, inputPath) {
-        return inputPath.replace("styles/", "");
+        return inputPath.replace("styles/", "").replace(".scss", ".css");
       },
     },
   });
@@ -53,6 +53,11 @@ export default function (eleventyConfig) {
       });
     }
     return content;
+  });
+
+  eleventyConfig.addCollection("posts", function (collection) {
+    console.log(collection.getFilteredByGlob("pages/blog/*.md"));
+    return collection.getFilteredByGlob("pages/blog/*.md");
   });
 
   return {
