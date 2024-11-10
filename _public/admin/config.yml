@@ -8,15 +8,6 @@ media_folder: _public/media
 public_folder: media
 site_url: https://cloud9robotics.pages.dev
 collections:
-  - name: marketing
-    label: Marketing
-    folder: pages
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
   - name: blog
     label: Blog
     folder: pages/blog
@@ -24,6 +15,21 @@ collections:
     slug: "blog/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          date_format: "YYYY-MM-DD",
+          default: "{{now}}",
+        }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: marketing
+    label: Marketing
+    folder: pages
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
