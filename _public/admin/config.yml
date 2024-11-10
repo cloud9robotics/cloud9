@@ -3,6 +3,7 @@ backend:
   repo: boehs/cloud9
   branch: main
   site_domain: cloud9robotics.pages.dev
+  auth_endpoint: /api/auth
 publish_mode: simple
 media_folder: _public/media
 public_folder: media
