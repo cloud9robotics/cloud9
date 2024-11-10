@@ -5,6 +5,7 @@ backend:
   site_domain: cloud9robotics.pages.dev
   base_url: https://cloud9robotics.pages.dev
   auth_endpoint: /api/auth
+
 publish_mode: simple
 media_folder: _public/media
 public_folder: media
@@ -25,6 +26,12 @@ collections:
           default: "{{now}}",
         }
       - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Cover Image",
+          name: "coverImage",
+          widget: "image",
+          required: false,
+        }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: marketing
     label: Marketing

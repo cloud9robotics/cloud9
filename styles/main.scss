@@ -99,8 +99,15 @@ h1 {
   flex-wrap: wrap-reverse;
 
   img {
-    height: 150px;
     animation: unwind 1.5s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .logo {
+    height: 150px;
+  }
+
+  .cover {
+    height: 300px;
   }
 }
 

@@ -1,6 +1,9 @@
 ---
 title: First Meeting
 date: 2024-11-09
-description: Our first meeting
+description: And, our first post!
 ---
+
 We had our first meeting today! We organized into teams, and got started building the robot! Cheers to the future!
+
+Pictures to come soon, we're testing the waters with this blog.
