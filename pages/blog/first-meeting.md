@@ -6,4 +6,4 @@ coverImage: media/day1.webp
 ---
 We had our first meeting today! We organized into teams, and got started building the robot! Cheers to the future!
 
-Pictures to come soon, we're testing the waters with this blog. boo!
+Pictures to come soon, we're testing the waters with this blog. boo! meowmeow
