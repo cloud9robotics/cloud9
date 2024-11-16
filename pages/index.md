@@ -12,11 +12,15 @@ We are the Cloud9 Robotics team, a 501 (c) nonprofit based in Brookline. We are 
 
 
 </div>
+
 ![](media/us.webp)
+
 </div>
 
 <div class="parted">
+
 ![](/media/gearup.jpg)
+  
 <div>
 
 
