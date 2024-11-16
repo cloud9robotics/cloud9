@@ -66,17 +66,25 @@
           console.log(obj);
           if (obj.imageSide === "left") {
             return `<div class="parted">
+
 ![](${obj.image})
+
 <div>
+
 ${obj.contents}
+
 </div>
 </div>`;
           } else {
             return `<div class="parted">
 <div>
+
 ${obj.contents}
+
 </div>
+
 ![](${obj.image})
+
 </div>`;
           }
         },
