@@ -5,6 +5,7 @@ import { minify as minifyHtml } from "html-minifier";
 import { minify as minifyTs } from "terser";
 import * as sass from "sass";
 import path from "path";
+import pluginIcons from "eleventy-plugin-icons";
 
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ _public: "/" });
@@ -59,6 +60,8 @@ export default function (eleventyConfig) {
     console.log(collection.getFilteredByGlob("pages/blog/*.md"));
     return collection.getFilteredByGlob("pages/blog/*.md");
   });
+
+  eleventyConfig.addPlugin(pluginIcons);
 
   return {
     dir: {
