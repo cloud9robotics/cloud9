@@ -9,16 +9,12 @@
         </nav>
         <main>
             <article class="h-entry" {% if date and structuredData.type %} itemscope itemtype="https://schema.org/{{ structuredData.type }}" {% endif %}>
-                {% block main %}
-                    {% if title and not notitle %}
-                        <header>
-                            {% include "partials/head.njk" %}
-                        </header>
-                    {% endif %}
-                    <div class="e-content">
-                        {{ content | safe }}
-                    </div>
-                {% endblock %}
+                <header>
+                    {% include "partials/head.njk" %}
+                </header>
+                <div class="e-content">
+                    {{ content | safe }}
+                </div>
             </article>
         </main>
         <hr/>

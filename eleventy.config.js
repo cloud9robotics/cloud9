@@ -57,11 +57,25 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("posts", function (collection) {
-    console.log(collection.getFilteredByGlob("pages/blog/*.md"));
-    return collection.getFilteredByGlob("pages/blog/*.md");
+    return collection.getFilteredByGlob("pages/blog/*.md").sort((a, b) => {
+      if (a.date && b.date) {
+        return b.date - a.date;
+      }
+      return 0;
+    });
   });
 
-  eleventyConfig.addPlugin(pluginIcons);
+  eleventyConfig.addPlugin(pluginIcons, {
+    sources: [{ name: "lucide", path: "node_modules/lucide-static/icons" }],
+  });
+
+  eleventyConfig.addFilter("makeDateSexy", (date) => {
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  });
 
   return {
     dir: {

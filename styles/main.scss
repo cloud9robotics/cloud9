@@ -234,6 +234,14 @@ hr {
   margin: 5rem 5rem;
 }
 
+time {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.25rem;
+  font-size: 20px;
+}
+
 #posts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));

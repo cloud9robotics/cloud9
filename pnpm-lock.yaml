@@ -17,6 +17,9 @@ dependencies:
   html-minifier:
     specifier: ^4.0.0
     version: 4.0.0
+  lucide-static:
+    specifier: ^0.460.0
+    version: 0.460.0
   postcss:
     specifier: ^8.4.47
     version: 8.4.47
@@ -1443,6 +1446,10 @@ packages:
 
   /lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
+    dev: false
+
+  /lucide-static@0.460.0:
+    resolution: {integrity: sha512-X6pIdg7jVxv7YQ/uR241hwhNiztcAfmj181TbcX7HCxxk/3mGaRtAc6b2ftUvQBufbJE6ehgyzO2uVsa604tWg==}
     dev: false
 
   /luxon@3.5.0:

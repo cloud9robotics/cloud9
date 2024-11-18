@@ -10,6 +10,12 @@
         {% if description %}
             <p class="p-summary">{{ description }}</p>
         {% endif %}
+        {% if date %}
+            <time class="dt-published" datetime="{{ date }}">
+                {% icon "lucide:calendar" %}
+                {{ date | makeDateSexy }}
+            </time>
+        {% endif %}
     </div>
     {% if coverImage %}
         <img src="/{{ coverImage }}" alt="" class="cover"/>
