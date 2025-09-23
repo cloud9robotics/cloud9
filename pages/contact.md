@@ -10,13 +10,13 @@ Reach out to [cloud9brookline@gmail.com](mailto:cloud9brookline@gmail.com), and 
 Alternatively, you may reach out to:
 
 
-[Eva Forman](mailto:eva4man1@gmail.com) : One of our Co-Captains and part of the Outreach Team.
+[Eva Forman](mailto:eva4man1@gmail.com): One of our Co-Captains and part of the Outreach Team.
 
-[Kai Putney](mailto:klputney2008@gmail.com) : Our Outreach Lead.
+[Kai Putney](mailto:klputney2008@gmail.com): Our Outreach Lead.
 
-[E](elana@braun-jones.org)[lana Braun-Jones ](elana@braun-jones.org): One of our Co-Captains and our Programming Lead.
+[E](elana@braun-jones.org)[lana Braun-Jones](elana@braun-jones.org): One of our Co-Captains and our Programming Lead.
 
-[Taylor Braun-Jones](taylor@braun-jones.org) : One of our lovely Mentors.
+[Taylor Braun-Jones](taylor@braun-jones.org): One of our lovely Mentors.
 
 [Charu Puri-Sharma](charu.ps@gmail.com) : One of our lovely Parent Mentors, in charge of parent communication.
 [](mailto:klputney2008@gmail.com)
