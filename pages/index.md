@@ -27,7 +27,7 @@ Cloud9 brings something different, and yet very necessary, to the BRI community.
 
 We are participants in the [FIRST](https://www.firstinspires.org/) FTC Robotics Competition, a global competition that challenges high school students to build and program robots to compete in a tournament that changes every year. Beyond just the obvious building and programming aspects of the team, team members have to learn how to project manage, create impact through outreach, and fundraise to support their team and the parts they want (or need) to buy. 
 
-The theme for the 2025-2026 FTC season is [Decode](https://www.firstinspires.org/robotics/ftc/game-and-season) (the idea being that the game is slightly archaeology themed). Our objective is to launch green and purple wiffle balls into our appropriate basket in a certain order - called a "motif" - that is determined at the beginning of each game. There are lots of caveats and nuances to this year's game. Learn more in this season's [kickoff video](https://www.youtube.com/watch?v=tRlcAwgMx5Q)!
+The 2025-2026 FTC season is called [Decode](https://www.firstinspires.org/robotics/ftc/game-and-season) and follows archaeology theme. There are many interesting nuances to this year's game. Learn more in this season's [kickoff video](https://www.youtube.com/watch?v=tRlcAwgMx5Q)!
 
 </div>
 </div>
