@@ -35,7 +35,7 @@ The 2025-2026 FTC season is called [Decode](https://www.firstinspires.org/roboti
 <div class="parted">
 <div>
 
-## Robots Make us
+## Robots Make Us
 
 Through BRI's summer outreach program, this year in collaboration with Penguin Coding School and RoboHub, we introduce elementary and middle school students to the world of robotics. We teach them how to build and program robots, and we help them to develop the skills they need to succeed in the 21st century. Through this summer program, many of our team members are hired for the first time, and get to have that positive first job expereince that we all hope for.
 
