@@ -11,6 +11,8 @@ We are Cloud9 Robotics, one of four Brookline [FTC](https://www.firstinspires.or
 
 Cloud9 brings something different, and yet very necessary, to the BRI community. We offer a space where people with other commitments and interests, whether they are a priority over robotics or not, are able to gain from the FTC experience what every other BRI team gains as well. Team members are able to build technical skills and progress their understanding of the engineering process, all while learning to work under a budget and foster effective collaboration. In short, we place a heavy emphasis on the *skills* that FTC aims to leave its participants with.
 
+
+
 </div>
 
 ![](media/team-photo-temporary.jpg)
@@ -23,18 +25,21 @@ Cloud9 brings something different, and yet very necessary, to the BRI community.
 
 <div>
 
+
+
 ## What is FTC?
 
 We are participants in the [FIRST](https://www.firstinspires.org/) FTC Robotics Competition, a global competition that challenges high school students to build and program robots to compete in a tournament that changes every year. Beyond just the obvious building and programming aspects of the team, team members have to learn how to project manage, create impact through outreach, and fundraise to support their team and the parts they want (or need) to buy. 
 
 The 2025-2026 FTC season is called [Decode](https://www.firstinspires.org/robotics/ftc/game-and-season) and follows archaeology theme. There are many interesting nuances to this year's game. Learn more in this season's [kickoff video](https://www.youtube.com/watch?v=tRlcAwgMx5Q)!
 
+
+
 </div>
 </div>
 
 <div class="parted">
 <div>
-
 
 ## Robots make us
 
