@@ -5,24 +5,20 @@ description: We would love to hear from you!
 <div class="parted">
 <div>
 
-Reach out to [cloud9brookline@gmail.com](mailto:cloud9brookline@gmail.com), and someone will get back to you as soon as possible.
+## General Inquiries
 
-Alternatively, you may reach out to:
+Reach out to [contact@cloud9robotics.org](mailto:contact@cloud9robotics.org) and someone will get back to you as soon as possible.
 
+## Leadership Team
 
-[Eva Forman](mailto:eva4man1@gmail.com): One of our Co-Captains and part of the Outreach Team.
-
-[Kai Putney](mailto:klputney2008@gmail.com): Our Outreach Lead.
-
-[E](elana@braun-jones.org)[lana Braun-Jones](elana@braun-jones.org): One of our Co-Captains and our Programming Lead.
-
-[Taylor Braun-Jones](taylor@braun-jones.org): One of our lovely Mentors.
-
-[Charu Puri-Sharma](charu.ps@gmail.com) : One of our lovely Parent Mentors, in charge of parent communication.
-[](mailto:klputney2008@gmail.com)
+Name | Role
+-|-
+[Elana Braun-Jones](mailto:elana@braun-jones.org) | Co-Captain and Programming Lead
+[Eva Forman](mailto:eva4man1@gmail.com) | Co-Captain and Outreach Team
+[Kai Putney](mailto:klputney2008@gmail.com) | Outreach Lead
+[Taylor Braun-Jones](mailto:taylor@braun-jones.org) | Mentor
+[Charu Puri-Sharma](mailto:charu.ps@gmail.com) | Mentor
 
 </div>
-
-![](media/cloud9-logo-1-.svg)
-
+![Cloud9 Logo](media/cloud9-logo-1-.svg)
 </div>
