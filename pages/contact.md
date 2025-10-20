@@ -20,5 +20,7 @@ Name | Role
 [Charu Puri-Sharma](mailto:charu.ps@gmail.com) | Mentor
 
 </div>
+
 ![Cloud9 Logo](media/cloud9-logo-1-.svg)
+
 </div>
